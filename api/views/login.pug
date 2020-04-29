@@ -5,11 +5,12 @@ block content
   p Welcome to #{title}
 
     h2 Sign in:
-    p
-        label Login
-        input(type='text' name='login')
-    p
-        label Password
-        input(type='password' name='password')
-    p
-        input(type='submit' value='signIn')
+    form(method='post')
+        p
+            label Login
+            input(type='text' name='login')
+        p
+            label Password
+            input(type='password' name='password')
+        p
+            input(type='submit' value='Sign In')

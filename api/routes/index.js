@@ -9,10 +9,10 @@ router.get("/login", (req, res, next) => {
   res.render("login", { title: "Sign in" });
 });
 
-// router.post("/admin", (req, res, next) => {
-//   console.log(req.body);
+router.post("/login", (req, res, next) => {
+  console.log(req.body);
 
-//   res.redirect("/admin");
-// });
+  res.redirect("/login");
+});
 
 module.exports = router;
