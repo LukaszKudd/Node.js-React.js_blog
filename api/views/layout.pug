@@ -1,12 +1,17 @@
 doctype html
+mixin item(title, url)
+  li
+     a(href=url)= title
+
 html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     ul
-      li
-        a(href="/") Home
-      li
-        a(href="/news") News
-    block content
+      +item('Home', '/')
+      +item('News', '/news')
+      +item('Admin', '/admin')
+
+
+block content
