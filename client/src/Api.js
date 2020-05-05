@@ -6,7 +6,7 @@ class Api extends Component {
   }
 
   render() {
-    return <div>Elo</div>;
+    return <div>Hello</div>;
   }
 }
 

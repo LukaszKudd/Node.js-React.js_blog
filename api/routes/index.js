@@ -19,7 +19,6 @@ router.post("/login", (req, res, next) => {
     console.log("login do admina");
   } else {
     res.redirect("/login");
-    console.log(DUPA);
   }
 });
 
