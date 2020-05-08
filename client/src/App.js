@@ -3,7 +3,13 @@ import "./App.css";
 import Api from "./Api";
 
 function App() {
-  return <Api />;
+  return (
+    <>
+      <Header />
+      <Content />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
