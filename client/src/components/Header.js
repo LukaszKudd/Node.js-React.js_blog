@@ -11,13 +11,13 @@ class Header extends Component {
         <header>
           <nav>
             <ul>
-              <Link class="link" to="/">
+              <Link className="link" to="/">
                 Home
               </Link>
-              <Link class="link" to="/blog">
+              <Link className="link" to="/blog">
                 Blog
               </Link>
-              <Link class="link" to="/admin">
+              <Link className="link" to="/admin">
                 Admin
               </Link>
             </ul>
