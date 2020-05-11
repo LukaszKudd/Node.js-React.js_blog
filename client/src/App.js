@@ -1,13 +1,15 @@
 import React from "react";
 import "./App.css";
-import Api from "./Api";
+import Header from "./components/Header";
+// import Content from "./components/Content";
+// import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <Header />
-      <Content />
-      <Footer />
+      {/* <Content /> */}
+      {/* <Footer /> */}
     </>
   );
 }
