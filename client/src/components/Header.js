@@ -1,17 +1,35 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Blog from "./Blog";
+import Home from "./Home";
+import Admin from "./Admin";
 
 class Header extends Component {
   render() {
     return (
-      <header>
-        <nav>
-          <ul>
-            <li>Home</li>
-            <li>Blog</li>
-            <li>Admin</li>
-          </ul>
-        </nav>
-      </header>
+      <Router>
+        <header>
+          <nav>
+            <ul>
+              <Link to="/">Home</Link>
+              <Link to="/blog">Blog</Link>
+              <Link to="/admin">Admin</Link>
+            </ul>
+          </nav>
+        </header>
+
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/blog">
+            <Blog />
+          </Route>
+          <Route path="/admin">
+            <Admin />
+          </Route>
+        </Switch>
+      </Router>
     );
   }
 }
