@@ -16,6 +16,6 @@
     "nodemon": "^2.0.3"
   },
   "devDependencies": {
-    "pug": "^2.0.0-beta11"
+    "pug": "^3.0.1"
   }
 }
